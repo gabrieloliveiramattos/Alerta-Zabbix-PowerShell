@@ -32,7 +32,7 @@ $objForm.Topmost = $True
 $objForm.ControlBox = $false
 [void]$objForm.Show()
 
-#Tempo do alerta, com mudança no backgroun e font da mensagem
+#Tempo do alerta, com mudança no background e font-color da mensagem
 for($i = 0; $i -lt 15; $i++) {
 
 Start-Sleep -Milliseconds 200
