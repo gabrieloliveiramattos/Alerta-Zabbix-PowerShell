@@ -7,8 +7,11 @@ Em alguns casos necessitamos agir imediatamente a fim de corrigir um alerta. Com
 Criamos uma tarefa agenda com o script Alerta.ps1 na estação dos analistas. No Zabbix configuramos uma ação para que todo alerta que seja de servidor indisponivel, mande um .txt para as estações com o nome do servidor em questão.
 
 Host:  Nome das estações
+
 Type:  Custom Script
+
 Execute on:  Zabbix Agent
+
 Comands:  cmd /c echo {HOST.NAME} > C:\temp\host.txt && schtasks /run /tn Alerta
 
 
